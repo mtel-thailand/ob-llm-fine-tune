@@ -1,0 +1,29 @@
+{
+  "features": [
+    {
+      "id": "amenity-booking",
+      "title": "Amenity Booking (Retail and Workplace)",
+      "keywords": ["amenity", "booking", "reservation", "retail", "workplace"]
+    },
+    {
+      "id": "visitor-pass",
+      "title": "Visitor Pass",
+      "keywords": ["visitor", "visitor pass", "visitor-pass", "guest", "pass"]
+    },
+    {
+      "id": "workplace-role",
+      "title": "Workplace Role Management",
+      "keywords": ["workplace", "role", "permission", "authorization", "member"]
+    },
+    {
+      "id": "authentication",
+      "title": "Authentication",
+      "keywords": ["authentication", "authenticate", "auth", "login", "jwt", "token", "iam"]
+    },
+    {
+      "id": "notification",
+      "title": "Notification",
+      "keywords": ["notification", "notify", "push", "fcm", "email"]
+    }
+  ]
+}

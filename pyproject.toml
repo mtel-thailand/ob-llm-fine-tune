@@ -1,0 +1,21 @@
+[project]
+name = "one-bangkok-llm-digests"
+version = "0.1.0"
+description = "Stack-agnostic, review-first code digests for LLM fine-tuning"
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+training = [
+  "accelerate>=1.0",
+  "datasets>=3.0",
+  "peft>=0.19.1",
+  "torch>=2.4",
+  "transformers>=4.57",
+]
+qlora = ["bitsandbytes>=0.46"]
+
+[project.scripts]
+obk-llm-digests = "obk_llm_digests.cli:main"
+
+[tool.unittest]
+start-directory = "tests"

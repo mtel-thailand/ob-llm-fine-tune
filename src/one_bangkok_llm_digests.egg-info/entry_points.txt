@@ -1,0 +1,2 @@
+[console_scripts]
+obk-llm-digests = obk_llm_digests.cli:main

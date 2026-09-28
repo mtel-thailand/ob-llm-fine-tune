@@ -1,0 +1,46 @@
+{
+  "chunk_lines": 120,
+  "chunk_overlap_lines": 16,
+  "max_file_bytes": 1048576,
+  "allow_unknown_text": false,
+  "text_extensions": [".feature", ".mdx"],
+  "repositories": [
+    {
+      "label": "booking-api",
+      "path": "../../../obk-booking",
+      "framework": "nestjs",
+      "include": ["apps/booking-api/src/**", "apps/booking-api/test/**"],
+      "exclude": ["**/*.generated.ts"]
+    },
+    {
+      "label": "mobile-app",
+      "path": "../../../one-bangkok-app",
+      "framework": "react-native",
+      "include": ["app/OneBangkok/**"]
+    },
+    {
+      "label": "iam",
+      "path": "../../../obk-mtel-iam",
+      "framework": "nodejs",
+      "include": ["src/**", "tests/**", "sdk/src/**"]
+    },
+    {
+      "label": "bms",
+      "path": "../../../obk-mtel-bms",
+      "framework": "nodejs",
+      "include": ["src/**", "tests/**", "sdk/src/**"]
+    },
+    {
+      "label": "cms",
+      "path": "../../../obk-cms",
+      "framework": "nextjs",
+      "include": ["app/src/**"]
+    },
+    {
+      "label": "notification",
+      "path": "../../../obk-mtel-notification",
+      "framework": "nodejs",
+      "include": ["src/**", "tests/**", "sdk/src/**"]
+    }
+  ]
+}

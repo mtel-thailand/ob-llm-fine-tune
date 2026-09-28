@@ -1,0 +1,30 @@
+# Go-To-ChaoRai v10: source-grounded dataset with repeated direct domain anchors.
+# 1,484 train rows x batch size 2 x 1,484 iterations = two passes over v10.
+model: "mlx-community/Qwen3-1.7B-4bit-AWQ"
+train: true
+fine_tune_type: lora
+data: "data/mlx-quality-v10"
+seed: 20260925
+# Qwen3-1.7B has 28 transformer blocks. Fine-tune all of them so that the
+# One Bangkok meaning of high-prior terms such as Visitor Pass is represented
+# throughout the model rather than only in the final 16 blocks.
+num_layers: 28
+batch_size: 2
+# 2 passes over the 2,384-record prepared training split (batch size 2).
+iters: 2384
+learning_rate: 1.0e-5
+steps_per_report: 10
+steps_per_eval: 200
+val_batches: 5
+adapter_path: "models/go-to-chaorai-qwen3-1.7b-quality-v10-lora"
+save_every: 200
+# Tokenizer audit: v10 maximum is 989 tokens, so no record is truncated.
+max_seq_length: 1024
+grad_checkpoint: true
+grad_accumulation_steps: 1
+mask_prompt: true
+lora_parameters:
+  keys: ["self_attn.q_proj", "self_attn.v_proj"]
+  rank: 16
+  scale: 32
+  dropout: 0.05
