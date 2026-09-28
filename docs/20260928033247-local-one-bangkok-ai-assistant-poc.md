@@ -227,12 +227,12 @@ uv run --offline --with 'mlx-lm[train]' mlx_lm.generate \
 
 | Evidence ID | Type | Description | Link or Attachment |
 |---|---|---|---|
-| EV-01 | Manifest | Current digest and graph counts | [`source-sync-report-v10.json`](../data/source-sync-report-v10.json) |
-| EV-02 | Validation report | Dataset hash, record counts, source-citation coverage, and validation outcome | [`source-sync-report-v10.json`](../data/source-sync-report-v10.json) |
-| EV-03 | Build manifest | Qwen3 1.7B LoRA/fused training fingerprint | [`Qwen fused manifest`](../models/go-to-chaorai-qwen3-1.7b-quality-v10-fused/build-manifest.json) |
-| EV-04 | Build manifest | Llama 3.2 1B LoRA/fused training fingerprint | [`Llama fused manifest`](../models/go-to-chaorai-llama-3.2-1b-quality-v10-fused/build-manifest.json) |
-| EV-05 | Evaluation output | Held-out classification results and model answers | [`Qwen results`](../data/go-to-chaorai-qwen3-v10-classification-results.json), [`Llama results`](../data/go-to-chaorai-llama-v10-classification-results.json) |
-| EV-06 | Runtime implementation | Local retrieval and grounded MLX invocation | [`rag.py`](../src/obk_llm_digests/rag.py) |
+| EV-01 | Manifest | Current digest and graph counts | [source-sync-report-v10.json](https://github.com/mtel-thailand/ob-llm-fine-tune/blob/main/data/source-sync-report-v10.json) |
+| EV-02 | Validation report | Dataset hash, record counts, source-citation coverage, and validation outcome | [source-sync-report-v10.json](https://github.com/mtel-thailand/ob-llm-fine-tune/blob/main/data/source-sync-report-v10.json) |
+| EV-03 | Build manifest | Qwen3 1.7B LoRA/fused training fingerprint | [Qwen fused manifest](https://github.com/mtel-thailand/ob-llm-fine-tune/blob/main/models/go-to-chaorai-qwen3-1.7b-quality-v10-fused/build-manifest.json) |
+| EV-04 | Build manifest | Llama 3.2 1B LoRA/fused training fingerprint | [Llama fused manifest](https://github.com/mtel-thailand/ob-llm-fine-tune/blob/main/models/go-to-chaorai-llama-3.2-1b-quality-v10-fused/build-manifest.json) |
+| EV-05 | Evaluation output | Held-out classification results and model answers | [Qwen results](https://github.com/mtel-thailand/ob-llm-fine-tune/blob/main/data/go-to-chaorai-qwen3-v10-classification-results.json), [Llama results](https://github.com/mtel-thailand/ob-llm-fine-tune/blob/main/data/go-to-chaorai-llama-v10-classification-results.json) |
+| EV-06 | Runtime implementation | Local retrieval and grounded MLX invocation | [rag.py](https://github.com/mtel-thailand/ob-llm-fine-tune/blob/main/src/obk_llm_digests/rag.py) |
 
 ## Conclusion and Recommendation
 
@@ -362,9 +362,9 @@ PYTHONPATH=src uv run --offline --with mlx-lm --with-editable . \
 ## Links
 
 * [Project repository](https://github.com/mtel-thailand/ob-llm-fine-tune)
-* [Fine-tuning guide](LOCAL_ONE_BANGKOK_AI_ASSISTANT_FINE_TUNING.md)
-* [Training pipeline](../scripts/build_all_local_models.sh)
-* [Qwen configuration](../config/mlx-qwen3-1.7b-quality-v10.yaml)
-* [Llama configuration](../config/mlx-llama3.2-1b-quality-v10.yaml)
-* [Abdul Maker workspace](../../../abdul-maker/README.md)
-* [one-bangkok-rag](../../../obk-rag/README.md)
+* [Fine-tuning guide](https://github.com/mtel-thailand/ob-llm-fine-tune/blob/main/docs/LOCAL_ONE_BANGKOK_AI_ASSISTANT_FINE_TUNING.md)
+* [Training pipeline](https://github.com/mtel-thailand/ob-llm-fine-tune/blob/main/scripts/build_all_local_models.sh)
+* [Qwen configuration](https://github.com/mtel-thailand/ob-llm-fine-tune/blob/main/config/mlx-qwen3-1.7b-quality-v10.yaml)
+* [Llama configuration](https://github.com/mtel-thailand/ob-llm-fine-tune/blob/main/config/mlx-llama3.2-1b-quality-v10.yaml)
+* [Abdul Maker workspace](https://github.com/mtel-thailand/abdul-maker)
+* [one-bangkok-rag](https://github.com/mtel-thailand/one-bangkok-rag)
